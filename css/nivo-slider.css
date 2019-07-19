@@ -1,0 +1,130 @@
+/*
+ * jQuery Nivo Slider v2.6
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+
+.theme-default #slider {
+	float: right;
+	border: 10px solid #efefef;
+	background: #fff;
+    width: 400px; /* Make sure your images are the same size */
+    height: 260px; /* Make sure your images are the same size */
+} 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+
+.nivo-caption {
+	position:absolute;
+	left: -560px;
+	top:0px;
+	color:#666;
+	width: 460px;
+	padding: 40px 0;
+	z-index:8;
+}
+.nivo-caption h1 {
+	color: #333;
+	font-size: 34px;
+	margin-bottom: 40px;
+}
+.nivo-caption p {
+	color: #999;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.08em;
+	margin-bottom: 20px;
+}
+
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+
+
+.theme-default .nivo-directionNav a {
+	position:absolute;	
+	display:block;
+	width:28px;
+	height:94px;
+	background:  url(../images/tvaco-slider-next-previous.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	top:30%;
+	z-index:9;
+	cursor:pointer;
+}
+.theme-default a.nivo-nextNav {
+	background-position:-28px 0;
+	right: 0px;
+}
+.theme-default a.nivo-prevNav {
+	left: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+
+.theme-default .nivo-controlNav {
+	position:absolute;
+	right: 0px;
+	bottom:-75px;
+    margin-left:-40px; /* Tweak this to center bullets */
+	height: 35px;
+}
+.theme-default .nivo-controlNav a {
+	display:block;
+	width: 54px;
+	height: 35px;
+	background: url(../images/tooplate_slider_control.png);
+	text-align: center;
+	line-height: 35px;
+	border:0;
+	margin-left: 12px;
+	float:left;
+	z-index: 9;
+	cursor: pointer;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position: -54px 0;
+}
